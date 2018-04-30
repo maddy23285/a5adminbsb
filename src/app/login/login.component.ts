@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  constructor(private global:GlobalService) { 
+  }
 
   ngOnInit() {
   }
